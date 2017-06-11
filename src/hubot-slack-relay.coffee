@@ -226,9 +226,8 @@ module.exports = (robot) ->
     if res.message.user.name in ignoreUsers then return
 
     for relay in relays
-      if res.message.room isnt relay.localRoom then continue
       user = { room: relay.remoteRoom }
-      if not relay.remote.send user, '_' + res.message.user.name + ' said:_ ' + res.match[1]
+      if not relay.remote.send user, res.match[1]
         invalidChannelError relay
 
   robot.enter (res) ->

@@ -1,7 +1,7 @@
 {
   "name": "hubot-slack-relay",
   "description": "Hubot script to relay messages between Slack servers.",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "author": {
     "name": "David Kassa",
     "url": "https://github.com/davidkassa"
@@ -24,7 +24,7 @@
   "dependencies": {
     "coffee-script": "~1.6",
     "log": "1.4.0",
-    "slack-client": "~1.4.0",
+    "@slack/client": "~3.1.0",
     "string": "^3.1.1"
   },
   "devDependencies": {
